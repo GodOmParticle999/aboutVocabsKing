@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocabsKing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./assets/app-icon.png" alt="VocabsKing Icon" class="app-icon">
+            <h1>VocabsKing</h1>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="app-section">
+            <div class="app-header">
+                <h2 class="title">Features Of VocabsKing</h2>
+                <img src="./assets/app-icon.png" alt="VocabsKing Icon" class="section-app-icon">
+            </div>
+            <p class="description">
+                VocabsKing is your daily companion for vocabulary enhancement. Every day, you'll receive 10 new carefully selected words based on your chosen difficulty level. Each word comes with:
+            </p>
+            <ul class="features-list">
+                <li>English meanings and definitions</li>
+                <li>Hindi translations</li>
+                <li>Synonyms and antonyms</li>
+                <li>Usage examples in sentences</li>
+            </ul>
+
+            <h3 class="subtitle">Upcoming Features</h3>
+            <ul class="features-list upcoming">
+                <li><i class="fas fa-star"></i> 10 high-quality words from The Hindu Editorial daily</li>
+            </ul>
+            
+            <a href="https://play.google.com/store/apps/details?id=com.vocabsking" class="play-store-button" target="_blank">
+                <i class="fab fa-google-play"></i>
+                Download from Play Store
+            </a>
+        </section>
+
+        <section class="support-section">
+            <h2 class="title">Support Us</h2>
+            <p class="description">
+                Although this application is entirely free to use, your donations help maintain our servers and support continued development!
+            </p>
+            
+            <div class="qr-container">
+                <img src="./assets/QR.jpg" alt="Payment QR Code" class="qr-image">
+                <div class="button-group">
+                    <button class="action-button" onclick="downloadQR()">Download QR</button>
+                    <button class="action-button" onclick="takeScreenshot()">Take Screenshot</button>
+                </div>
+            </div>
+
+            <h3 class="subtitle">Or pay using UPI ID</h3>
+            
+            <div class="upi-container">
+                <span class="upi-text" id="upiId">godomparticle@ybl</span>
+                <button class="copy-button" onclick="copyUpiId()">
+                    <i class="fas fa-copy"></i>
+                    <span>Copy</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3>Connect With Me</h3>
+        <div class="contact-info">
+            <a href="mailto:amnesiacnavin.nk999@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+            </a>
+            <a href="https://wa.me/919060818602" class="contact-link">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+            </a>
+            <a href="https://github.com/GodOmParticle999" class="contact-link" target="_blank">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
