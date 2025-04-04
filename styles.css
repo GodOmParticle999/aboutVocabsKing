@@ -13,7 +13,7 @@ body {
 header {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: 0.7rem;
     text-align: center;
 }
 
@@ -120,6 +120,32 @@ header {
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(124, 58, 237, 0.05);
+    text-align: left;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-content h3 {
+    color: var(--primary-color);
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.privacy-content p, .privacy-content ul {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.privacy-content ul {
+    padding-left: 20px;
+}
+
+.privacy-content ul li {
+    margin: 8px 0;
 }
 
 .features-list {
@@ -192,9 +218,11 @@ header {
 
 .contact-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
     margin-top: 15px;
+    padding: 0 10px;
 }
 
 .contact-link {
@@ -203,9 +231,27 @@ header {
     gap: 8px;
     color: white;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 8px;
     transition: background-color 0.2s;
+    min-width: 100px;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        gap: 10px;
+    }
+    
+    .contact-link {
+        font-size: 14px;
+        min-width: auto;
+        padding: 8px 10px;
+    }
+
+    .contact-link i {
+        font-size: 1.2em;
+    }
 }
 
 .contact-link:hover {
@@ -238,4 +284,52 @@ header {
 
 .upcoming li i {
     margin-right: 8px;
+}
+
+.privacy-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.privacy-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.privacy-footer {
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.privacy-footer p {
+    margin: 5px 0;
+}
+
+.highlight-text {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.highlight-text i {
+    color: #fbbf24;
 }
