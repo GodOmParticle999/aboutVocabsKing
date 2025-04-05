@@ -213,6 +213,238 @@ header {
 
 .header-content {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-link {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .header-nav {
+        gap: 10px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 16px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 24px;
+    line-height: 24px;
+}
+
+.qr-container {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.qr-image {
+    width: 100%;
+    height: auto;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 16px;
+}
+
+.upi-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.upi-text {
+    font-size: 16px;
+    color: #333;  
+}
+
+.button-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.copy-button i {
+    font-size: 1.1em;
+}
+
+.copy-button.copied {
+    background-color: #22c55e;
+}
+
+.action-button:hover {
+    opacity: 0.9;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #fff;
+        --bg-color: #000;
+    }
+}
+
+.app-section, .support-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(124, 58, 237, 0.05);
+    text-align: left;
+}
+
+.privacy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-content h3 {
+    color: var(--primary-color);
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.privacy-content p, .privacy-content ul {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.privacy-content ul {
+    padding-left: 20px;
+}
+
+.privacy-content ul li {
+    margin: 8px 0;
+}
+
+.features-list {
+    text-align: left;
+    max-width: 500px;
+    margin: 20px auto;
+    color: var(--text-color);
+}
+
+.features-list li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.play-store-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.play-store-button:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info {
+    margin-top: 15px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+}
+
+.contact-info a:hover {
+    border-bottom: 1px solid white;
+}
+
+.header-content {
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
